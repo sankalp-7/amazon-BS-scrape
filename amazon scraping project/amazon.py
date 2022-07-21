@@ -2,6 +2,7 @@ import csv
 from bs4 import BeautifulSoup
 import requests
 import json
+import time
 
 with open('urls.csv', newline='') as csvfile:   #opening the csv file and storing the values in appropiate variables
     reader = csv.DictReader(csvfile)
@@ -20,6 +21,7 @@ for i,j in zip(country,asin):      #storing all possible urls in a single list
 headers = {
     'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36'
 }
+start_time=time.time()
 for i in urls:  #looping through all the urls to scrape required data using BeautifulSoup4
     try:
         webpage = requests.get(i,headers=headers).content
@@ -76,8 +78,7 @@ for i in urls:  #looping through all the urls to scrape required data using Beau
 with open('data.json','a') as f:
     f.write(']')
     f.close()
-
-        
+print(round(time.time() - start_time, 2))
 
 
 
