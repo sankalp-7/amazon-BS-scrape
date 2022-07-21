@@ -1,7 +1,7 @@
 # amazon-BS-scrape
 
-<a href="https://colab.research.google.com/drive/1vO-_0HsuWU98MAa8Cdf341coZU6od4yn?usp=sharing" class="button">GOOGLE COLAB</a>
-GOOGLE COLAB LINK-->https://colab.research.google.com/drive/1vO-_0HsuWU98MAa8Cdf341coZU6od4yn?usp=sharing
+<a href="https://colab.research.google.com/drive/1vO-_0HsuWU98MAa8Cdf341coZU6od4yn?usp=sharing" class="button"><button class="button">GOOGLE COLAB</button></a>
+
 
 
 
